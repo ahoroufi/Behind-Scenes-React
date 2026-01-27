@@ -18,11 +18,12 @@ function ConfigureCounter({ onset }) {
         setEnteredNumber(0);
     }
 
-
-    <section id="configure-counter">
-        <h2>Set Counter</h2>
-        <input type="number" onChange={handleChange} value={enteredNumber} />
-        <button onClick={handleSetClick}>Set</button>
-    </section>
+    return (
+        <section id="configure-counter">
+            <h2>Set Counter</h2>
+            <input type="number" onChange={handleChange} value={enteredNumber} />
+            <button onClick={handleSetClick}>Set</button>
+        </section>
+    );
 }
 export default ConfigureCounter;
