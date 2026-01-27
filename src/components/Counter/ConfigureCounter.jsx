@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import { log } from "../../log";
 
-function ConfigureCounter({ onset }) {
+function ConfigureCounter({ onSet }) {
     log('<ConfigureCounter />', 1);
 
 
@@ -14,7 +14,7 @@ function ConfigureCounter({ onset }) {
     }
 
     function handleSetClick() {
-        onset(enteredNumber);
+        onSet(enteredNumber);
         setEnteredNumber(0);
     }
 
